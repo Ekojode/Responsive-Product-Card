@@ -1,0 +1,99 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: hsl(30, 38%, 92%);
+}
+
+body main {
+    width: 500px;
+    height: 375px;
+    margin: 100px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+}
+
+main h2 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 2px;
+}
+
+main h1 {
+    font-family: "Fraunces", serif;
+    color: hsl(212, 21%, 14%);
+}
+
+main p {
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+
+main #desktop {
+    max-width: 100%;
+    max-height: auto;
+    object-fit: cover;
+}
+
+main #mobile {
+    display: none;
+}
+
+main section {
+    background-color: hsl(0, 0%, 100%);
+    padding: 16px;
+}
+
+section div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#price {
+    font-size: 24px;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+}
+
+#main-price {
+    text-decoration: line-through;
+    padding-right: 60px;
+}
+
+#cart {
+    justify-content: center;
+    background-color: hsl(158, 36%, 37%);
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+#cart:active,
+#cart:hover {
+    background-color: hsl(158, 32%, 20%);
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    margin: 0 8px;
+}
+
+@media (max-width: 768px) {
+    body main {
+        flex-direction: column;
+        width: 300px;
+        height: 600px;
+    }
+    main #desktop {
+        display: none;
+    }
+    main #mobile {
+        display: block;
+    }
+    #main-price {
+        padding-right: 100px;
+    }
+}
